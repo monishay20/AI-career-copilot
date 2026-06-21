@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI Career Copilot 🚀
 
 > AI-powered resume analyzer that scores ATS compatibility, matches job descriptions, rewrites weak bullet points using Gemini AI, and exports optimized PDFs.
@@ -247,3 +248,7 @@ Built by **[Your Name]**
 ---
 
 ⭐ **If you found this project helpful, please give it a star!**
+=======
+# AI-Career-Copilot
+AI-powered resume analyzer that scores ATS compatibility, matches job descriptions, rewrites weak bullet points using Gemini AI, and exports optimized PDFs — built with Next.js 15, PostgreSQL, and Clerk auth.
+>>>>>>> e67d7888457685b8f49c1bb8ec1d089ad615a118
