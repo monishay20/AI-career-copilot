@@ -153,7 +153,7 @@ src/
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-career-copilot.git
+git clone https://github.com/monishay20/ai-career-copilot.git
 cd ai-career-copilot
 ```
 
@@ -240,7 +240,7 @@ MIT License — feel free to use this project as inspiration for your own portfo
 
 ## 🤝 Connect
 
-Built by **[Your Name]**
+Built by **[MONISHA YADAV]**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/monisha-yadav-425212310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/monishay20)
