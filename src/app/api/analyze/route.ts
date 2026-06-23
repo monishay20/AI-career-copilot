@@ -1,12 +1,13 @@
+import * as mammoth from "mammoth";
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@clerk/nextjs/server";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { prisma } from "@/lib/prisma";
-import * as mammoth from "mammoth";
 import { analyzeRatelimit } from "@/lib/ratelimit";
 import { analyzeSchema } from "@/lib/validation";
 import { logAIRequest } from "@/lib/aiLogger";
 
+export const runtime = "nodejs";
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 async function extractText(buffer: ArrayBuffer, fileName: string): Promise<string> {
@@ -24,11 +25,12 @@ async function extractText(buffer: ArrayBuffer, fileName: string): Promise<strin
   }
 
   if (fileName.endsWith(".docx")) {
-    const result = await mammoth.extractRawText({
-      buffer: Buffer.from(buffer),
-    });
-    return result.value;
-  }
+  const mammoth = await import("mammoth");
+  const result = await mammoth.extractRawText({
+    buffer: Buffer.from(buffer),
+  });
+  return result.value;
+}
 
   throw new Error("Unsupported file type");
 }
